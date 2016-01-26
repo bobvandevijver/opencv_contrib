@@ -145,7 +145,6 @@ public:
     imageHeight = val;
   }
 
-protected:
   /** @brief Performs all the operations and calls all internal functions necessary for the accomplishment of the
     Fast Self-tuning Background Subtraction Algorithm algorithm.
     @param image input image. According to the needs of this specialized algorithm, the param image is a
@@ -155,8 +154,6 @@ protected:
         stream).
   */
   bool computeSaliencyImpl( InputArray image, OutputArray saliencyMap );
-
-private:
 
   // classification (and adaptation) functions
   bool fullResolutionDetection( const Mat& image, Mat& highResBFMask );
